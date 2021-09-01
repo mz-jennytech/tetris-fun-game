@@ -1,0 +1,344 @@
+body {
+    height: 100vh;
+    background: #00008b;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0, 50px;
+}
+.navbar {
+    position: relative;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: #0000ff;
+    font-family: sans-serif;
+    height: 60px;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .tetrisLogo a {
+     height: 54px;
+    
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: #ffa500;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px; 
+}
+.navbar .menu li a:hover{
+    color: #fff;
+}
+
+/*home section styling*/
+.home {
+    display: flex;
+    background: url("backgroundlogo.PNG") no-repeat center;
+    height: 100vh;
+    width: 100%;
+    color: #ff4500;
+    min-height: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.home .max-width{
+    align-items: center;
+}
+.home .home-content .text-1 {
+    font-size: 60px;
+    margin-right: 1000px;
+    
+}
+.home .home-content .text-1 span{
+    color: #ffa500 ;
+    font-weight: 500;
+}
+.home .home-content .img-1 {
+     margin-left: 700px;
+     margin-top:  260px;
+
+}
+.home .home-content .text-3{
+    margin-left: 750px;
+    
+    font-size: 50px;
+}
+.home .home-content .text-3 span{
+    color: #ffa500 ;
+    font-weight: 500;
+}
+
+
+#my-canvas {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*all related*/
+section{
+    padding: 40px;
+}
+.about, .rules{
+    font-family:'Times New Roman', Times, serif;
+}
+section .title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+/*about section styling*/
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 420px;
+    width: 380px;
+    border-radius: 6px;
+     object-fit: cover;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.about .about-content .right li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px; 
+    border-radius: 6px;
+    background-color:#ff4500;
+    border-radius: 10px;
+    border: 5px solid #ffa500;
+    transition: all 0.3s ease;
+}
+.about .about-content .right li:hover {
+    color: #fff;
+    background: none;
+    border: 3px solid #fff;
+}
+.about .about-content .right li:visited {
+    color: darkblue;
+    background: none;
+    border: 1px solid darkblue;
+}
+
+/*rules section styling*/
+.rules .rules-content .card ol {
+    color: #fff;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+/*play section styling*/
+#my-canvas {
+    margin-left: 200px;
+}
+
+/*responsive media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  }
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .max-width{
+        padding: 0, 10px;
+    }
+    .home .home-content .text-1 {
+        font-size: 30px;
+        margin-right: 1000px;
+        
+    }
+    
+    .home .home-content .img-1 {
+         margin-left: 350px;
+         margin-top: 320px;
+    
+    }
+    .home .home-content .text-3{
+        margin-left: 330px;
+        
+        font-size: 25px;
+    }
+    .about .about-content .left img{
+        height: 320px;
+        width: 180px;
+        border-radius: 6px;
+         object-fit: cover;
+    }
+    section .title{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        color: #fff;
+    }
+    .about .about-content .right .text{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    
+/*rules section styling*/
+.rules .rules-content .card ol {
+    color: #fff;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 100px;
+}
+#my-canvas {
+    height: 600px;
+    width: 550px;
+    margin-left: 10px;
+}
+  } 
+  
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .max-width{
+        padding: 0, 20px;
+    }
+    .home .home-content .text-1 {
+        font-size: 40px;
+        margin-right: 1000px;
+        
+    }
+    
+    .home .home-content .img-1 {
+         margin-left: 430px;
+         margin-top:  320px;
+    
+    }
+    .home .home-content .text-3{
+        margin-left: 440px;
+        
+        font-size: 30px;
+    }
+    .about .about-content .left img{
+        height: 320px;
+        width: 280px;
+        border-radius: 6px;
+         object-fit: cover;
+    }
+    
+/*rules section styling*/
+.rules .rules-content .card ol {
+    color: #fff;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 200px;
+}
+#my-canvas {
+    height: 600px;
+    width: 700px;
+    margin-left: 30px;
+}
+  } 
+  
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .max-width{
+        padding: 0, 30px;
+    }
+    .home .home-content .text-1 {
+        font-size: 50px;
+        margin-right: 1000px;
+        
+    }
+    
+    .home .home-content .img-1 {
+         margin-left: 540px;
+         margin-top:  280px;
+    
+    }
+    .home .home-content .text-3{
+        margin-left: 600px;
+        
+        font-size: 30px;
+    }
+    #my-canvas {
+        margin-left: 0px;
+        height: 800px;
+        width: 900px;
+        margin-left: 50px;
+    }
+  } 
+/*Extra Large devices (large laptops and desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) {
+    .max-width{
+        padding: 0, 50px;
+    }
+    .home .home-content .text-1 {
+        font-size: 60px;
+        margin-right: 1000px;
+        
+    }
+    
+    .home .home-content .img-1 {
+         margin-left: 700px;
+         margin-top:  260px;
+    
+    }
+    .home .home-content .text-3{
+        margin-left: 750px;
+        
+        font-size: 50px;
+    }
+   
+/*rules section styling*/
+.rules .rules-content .card ol {
+    color: #fff;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 200px;
+    }
+
+    #my-canvas {
+        margin-left: 200px;
+    }
+    
+}
+    
