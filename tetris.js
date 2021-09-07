@@ -521,3 +521,4 @@ function GetLastSquareX()
     }
     return lastX;
 }
+
