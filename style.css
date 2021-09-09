@@ -184,30 +184,18 @@ section .title{
 }
 
 /*responsive media query */
-
-@media only screen and (max-width: 330px) {
-    .home .home-content .img-1 {
-        margin-left: 800px;
-        margin-top:  260px;
-   
-   }
-    .home .home-content .text-3{
-        margin-left: 80px;
-        font-size: 25px;
-    }
-    .navbar .tetrisLogo{
-        height: 54px;
-        margin-bottom: 40px;   
-    }
+/* Extra small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 360px) {
     .home .home-content .text-1 {
         font-size: 30px;
-        margin-top: 10px;
-        margin-right: 100px
+        margin-top: 50px;
     }
-     
-    
+    .home .home-content .text-3{
+        margin-left: 40px;
+        font-size: 25px;
+    }
      /*all related*/
-    section{
+     section{
         padding: 20px;
     }
     .about, .rules{
@@ -225,9 +213,8 @@ section .title{
     .about .about-content .left{
         width: 100%;
     }
-    
     .about .about-content .left img{
-        height: 230px;
+        height: 280px;
         width: 250px;
         margin-left: 20px;
         border-radius: 2px;
@@ -249,17 +236,7 @@ section .title{
         color: #fff;
         margin-bottom: 20px;
     }
-    .about .about-content .right li{
-        list-style: none;
-        display: inline-block;
-        margin-left: 30px; 
-        border-radius: 6px;
-        background-color:#ff4500;
-        border-radius: 10px;
-        border: 5px solid #ffa500;
-        transition: all 0.3s ease;
-    }
-    /*rules section styling*/
+        /*rules section styling*/
     .rules .rules-content .card ol {
         color: #fff;
         text-align: justify;
@@ -267,13 +244,14 @@ section .title{
         margin-left: 20px;
     }
     /*play section styling*/
-    #my-canvas {
-        margin-left: 5px;
+       /*play section styling*/
+       #my-canvas {
+        margin-left: 20px;
         height: 500px;
         width: 280px;
     }
-
 }
+/* Extra small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 539px) {
     .home .home-content .text-1 {
         font-size: 40px;
