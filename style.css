@@ -189,13 +189,13 @@ section .title{
     .home .home-content .text-1 {
         font-size: 30px;
         margin-top: 50px;
-    }
+    } 
     .home .home-content .text-3{
         margin-left: 40px;
         font-size: 25px;
     }
      /*all related*/
-     section{
+    section{
         padding: 20px;
     }
     .about, .rules{
