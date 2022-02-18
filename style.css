@@ -26,7 +26,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.navbar .tetrisLogo a {
+.tetrisLogo {
      height: 54px;
     
 }
@@ -170,24 +170,58 @@ section .title{
     margin-left: 200px;
 }
 
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 70px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-
 /*responsive media query */
 /* Extra small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 350px) {
    
      /*all related*/
+     .tetrisLogo {
+        height: 40px;
+        position: relative;
+        width: 80px;
+        
+     }
+
+     .navbar {
+         height: 50px;
+     }
+     
+     .navbar .menu li {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        position: relative;
+        right: 30px;
+        top: 5px;
+    }
+
+    .navbar .menu li a {
+        color: #ffa500;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 5px; 
+        padding-right: 8px;
+    }
+    .home .home-content .text-1 {
+        font-size: 25px;
+        position: relative;
+      right: 1rem;
+    }
+
+    .home .home-content .text-3{
+      position: relative;
+      right: 37rem;
+        font-size: 20px;
+        top: 50px;
+    }
+
+    .home .home-content .img-1 {
+        position: relative;
+      right: 29rem;
+      top: 38px;
+   }
+
      section{
         padding: 20px;
     }
@@ -219,36 +253,78 @@ section .title{
         width: 100%;
     }
     .about .about-content .right .text{
-        font-size: 25px;
-        font-weight: 600;
-        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
         text-align: center;
         color: #fff;
     }
     .about .about-content .right p{
         text-align: justify;
-        font-size:18px;
+        font-size: 18px;
         color: #fff;
         margin-bottom: 20px;
     }
+    .about .title{
+        font-size: 30px;
+        font-weight: 500;
+    }
         /*rules section styling*/
-    .rules .rules-content .card ol {
+   
+      .rules .rules-content .card ol {
         color: #fff;
-        text-align: justify;
-        font-size:  18px;
-        margin-left: 20px;
+        text-align: center;
+        font-size: 18px;
+        margin: 0 20px ;
+
+    }
+    
+    .rules .title{
+        font-size: 30px;
     }
     /*play section styling*/
     #my-canvas {
-        margin-left: 20px;
-        height: 560px;
-        width: 300px;
+       width: 280px;
+       height: 450px;
+       margin: 20px;
+    
     }
 
 }
 /* Extra small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 539px) {
+@media only screen and (min-width: 539px) {
   
+    .tetrisLogo {
+        height: 65px;
+        position: relative;
+        width: 100px;
+        bottom: 10px;
+    }
+    .navbar .menu li a {
+        font-size: 18px;
+        font-weight: 400;
+        padding-right: 10px;
+    }
+    .home .home-content .text-1 {
+        font-size: 40px;
+        position: relative;
+      right: 1rem;
+    }
+    .home .home-content .text-3{
+        position: relative;
+        right: 29rem;
+        font-size: 25px;
+        bottom: 20px;
+      }
+
+    .home .home-content .img-1 {
+    position: relative;
+    right: 23rem;
+    top: 2px;
+   
+   }
+  
+
     .about .about-content .left img{
         height: 320px;
         width: 200px;
@@ -301,22 +377,59 @@ section .title{
         color: #fff;
         text-align: justify;
         font-size:  20px;
-        margin-left: 10px;
+        margin-left: 20px;
+
+    }
+
+    .rules .title{
+        font-size: 30px;
     }
     /*play section styling*/
     #my-canvas {
-        margin-left: 20px;
-        height: 560px;
-        width: 300px;
+        margin: 20px;
+        height: 500px;
+        width: 500px;
     }
 
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .tetrisLogo {
+        height: 65px;
+        position: relative;
+        width: 150px;
+        bottom: 10px;
+    }
    
+    .home .home-content .text-1 {
+        font-size: 45px;
+        position: relative;
+        right: 1rem;
+    }
+    .home .home-content .text-3{
+        position: relative;
+        right: 20rem;
+        font-size: 30px;
+        bottom: 20px;
+      }
+
+    .home .home-content .img-1 {
+    position: relative;
+    right: 16rem;
+    top: 2px;
+   
+   }
+  
+   .navbar .menu li a {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 13px;
+    padding-right: 12px;
+    }
     .about .about-content .left img{
         height: 320px;
-        width: 180px;
+        width: 280px;
         border-radius: 6px;
          object-fit: cover;
     }
@@ -335,62 +448,126 @@ section .title{
         margin-bottom: 15px;
         color: #fff;
     }   
-    /*rules section styling*/
-    .rules .rules-content .card ol {
-        color: #fff;
-        text-align: justify;
-        font-size: 20px;
-        margin-left: 100px;
-    }
-    #my-canvas {
-        height: 600px;
-        width: 550px;
-        margin-left: 10px;
-    }
-} 
-  
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-   
+    .about .about-content .right p{
+        text-align: justify;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    
     /*rules section styling*/
    .rules .rules-content .card ol {
        color: #fff;
        text-align: justify;
-       font-size: 20px;
+       font-size: 25px;
        margin-left: 200px;
     }
     #my-canvas {
-        height: 600px;
+        height: 520px;
         width: 700px;
-        margin-left: 30px;
+        margin: 2 0 0 50px;
     }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+    .home .home-content .text-3{
+        position: relative;
+        right: 7rem;
+        font-size: 35px;
+        bottom: 20px;
+      }
+
+    .home .home-content .img-1 {
+    position: relative;
+    right: 9rem;
+    top: 2px;
+   
+   }
+  
+    .tetrisLogo {
+        height: 65px;
+        position: relative;
+        width: 180px;
+        bottom: 10px;
+    }
+
+    .about .about-content .left img{
+        height: 320px;
+        width: 300px;
+        margin-left: 30px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    .about .about-content .right p{
+        text-align: justify;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .rules .title{
+        font-size: 35px;
+    }
     #my-canvas {
-        margin-left: 0px;
-        height: 800px;
-        width: 900px;
-        margin-left: 50px;
+        margin-top: 0px;
+        height: 520px;
+        width: 700px;
+        margin-left: 150px;
     }
   } 
 /*Extra Large devices (large laptops and desktops, 1200px and up)*/
 @media only screen and (min-width: 1200px) {
-    
+
+    .home .home-content .text-1 {
+        font-size: 50px;
+        position: relative;
+        right: 1rem;
+    }
+    .home .home-content .text-3{
+        position: relative;
+        left: 8rem;
+        font-size: 30px;
+        top: 24px;
+      }
+
+    .home .home-content .img-1 {
+    position: relative;
+    right: 3rem;
+    top: 38px;
    
+   }
+
+    .about .about-content .right p{
+        text-align: justify;
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 20px;
+        width: 600px;
+    }
+   
+    .about .about-content .left img{
+        height: 360px;
+        width: 380px;
+        margin-left: 50px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
 /*rules section styling*/
 .rules .rules-content .card ol {
     color: #fff;
     text-align: justify;
-    font-size: 20px;
-    margin-left: 200px;
+    font-size: 25px;
+    margin-left: 300px;
     }
 
     #my-canvas {
-        margin-left: 200px;
+        margin: 0 0 0 350px;
+        height: 600px;
+        width: 700px;
     }
     
 }
