@@ -291,8 +291,130 @@ section .title{
     }
 
 }
+
+@media only screen and (max-width: 450px) {
+   
+    /*all related*/
+    .tetrisLogo {
+       height: 40px;
+       position: relative;
+       width: 80px;
+       
+    }
+
+    .navbar {
+        height: 50px;
+    }
+    
+    .navbar .menu li {
+       list-style: none;
+       display: inline-block;
+       padding: 0;
+       position: relative;
+       right: 30px;
+       top: 5px;
+   }
+
+   .navbar .menu li a {
+       color: #ffa500;
+       text-transform: uppercase;
+       font-size: 12px;
+       font-weight: 400;
+       margin-left: 5px; 
+       padding-right: 8px;
+   }
+   .home .home-content .text-1 {
+       font-size: 30px;
+       position: relative;
+     right: 1rem;
+   }
+
+   .home .home-content .text-3{
+     position: relative;
+     right: 32rem;
+       font-size: 20px;
+       top: 50px;
+   }
+
+   .home .home-content .img-1 {
+       position: relative;
+     right: 25rem;
+     top: 45px;
+  }
+
+    section{
+       padding: 20px;
+   }
+   .about, .rules{
+       font-family:'Times New Roman', Times, serif;
+   }
+   section .title{
+       text-align: center;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size: 40px;
+       font-weight: 500;
+       margin-bottom: 10px;
+       padding-bottom: 10px;
+       color: #fff;
+   }
+   .about .about-content .left{
+       width: 100%;
+   }
+   .about .about-content .left img{
+       height: 280px;
+       width: 250px;
+       margin-left: 20px;
+       border-radius: 2px;
+       object-fit: cover;
+      position: relative;
+      left: 40px;
+      right: 40px;
+      
+   }
+   .about .about-content .right{
+       width: 100%;
+   }
+   .about .about-content .right .text{
+       font-size: 20px;
+       font-weight: 500;
+       margin-bottom: 20px;
+       text-align: center;
+       color: #fff;
+   }
+   .about .about-content .right p{
+       text-align: justify;
+       font-size: 18px;
+       color: #fff;
+       margin-bottom: 20px;
+   }
+   .about .title{
+       font-size: 30px;
+       font-weight: 500;
+   }
+       /*rules section styling*/
+  
+     .rules .rules-content .card ol {
+       color: #fff;
+       font-size: 18px;
+       margin: 0 30px ;
+
+   }
+   
+   .rules .title{
+       font-size: 30px;
+   }
+   /*play section styling*/
+   #my-canvas {
+      width: 380px;
+      height: 500px;
+      margin: 0 30px;
+   
+   }
+
+}
+
 /* Extra small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 539px) {
+@media only screen and (min-width: 500px) {
   
     .tetrisLogo {
         height: 65px;
@@ -392,6 +514,8 @@ section .title{
     }
 
 }
+
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
